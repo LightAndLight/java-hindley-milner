@@ -1,5 +1,6 @@
 package language.hm;
 
+import language.hm.Context;
 import language.hm.type.*;
 import language.hm.type.unification.*;
 

@@ -2,11 +2,16 @@ package language.hm.type;
 
 import language.hm.type.unification.*;
 
-public abstract class Type implements IUnifiable {
+public abstract class Type {
   public Type generalize() {
     return this.runGeneralize(new Generalizer());
   }
 
+  public abstract Substitution unify(Unifier.UVar b) throws UnificationError;
+  public abstract Substitution unify(Type.TypeVar b) throws UnificationError;
+  public abstract Substitution unify(Type.FunctionType b) throws UnificationError;
+  public abstract Substitution unify(Type b) throws UnificationError;
+  public abstract boolean occurs(Unifier.UVar b);
   public abstract Type substitute(Unifier.UVar v, Type t);
   public abstract Type runGeneralize(Generalizer g);
 

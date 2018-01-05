@@ -1,4 +1,4 @@
-package language.hm.type;
+package language.hm;
 
 import java.util.HashMap;
 import java.util.LinkedList;

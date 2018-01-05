@@ -3,7 +3,7 @@ Implementation of Hindley-Milner type inference in Java
 
 ## ...Why?
 
-I needed to test myself. Java/C#-esque "Object Oriented Programming" in general are just not practical for
+I needed to test myself. Java/C#-esque "Object Oriented Programming" is just not practical for
 modern day software development.
 
 This paradigm and the languages that support it does not let us model problem domains both accurately and modularly. In the
